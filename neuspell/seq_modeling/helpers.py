@@ -31,7 +31,7 @@ def progressBar(value, endvalue, names, values, bar_length=30):
 def load_data(base_path, corr_file, incorr_file):
     # load files
     if base_path:
-        assert os.path.exists(base_path) == True
+        assert os.path.exists(base_path)
     incorr_data = []
     opfile1 = open(os.path.join(base_path, incorr_file), "r")
     for line in opfile1:
